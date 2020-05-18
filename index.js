@@ -54,4 +54,3 @@ function includesNumber(myArray, num) {
     }
 }
 
-([1, 4, 5, 3], 5)

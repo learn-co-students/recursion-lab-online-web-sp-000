@@ -1,6 +1,6 @@
 {
   "name": "recursion-lab",
-  "version": "0.1.0",
+  "version": "1.22.5",
   "description": "Practice manipulating JavaScript strings and arrays with recursion on Learn",
   "main": "index.js",
   "directories": {

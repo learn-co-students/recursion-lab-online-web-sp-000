@@ -74,5 +74,23 @@ function maxOf(array) {
     //SOLUTION KEY
     return Math.max(array.pop(), maxOf(array));    
   }
-    
+}
+
+function includesNumber(array, n) {
+  if (array.length === 0) {
+    return false
+  }
+  if (array.length === 1 && array[0] !== n) {
+    return false
+  }
+  if (array.length === 1 && array[0] === n) {
+    return true
+  }
+  if (array.length > 1 && array[0] === n) {
+    return true
+  }
+  if (array.length > 1 && array[0] !==n) {
+    array.shift()
+    return includesNumber(array, n)
+  }
 }

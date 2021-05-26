@@ -36,3 +36,11 @@ function isPalindrome(myString, myResult = true) {
   }
   return myResult;
 }
+
+function addUpTo(elements, index){
+  if(index==0){
+    return elements[index]
+  } else {
+    return elements[index] + addUpTo(elements, index - 1);
+  }
+}

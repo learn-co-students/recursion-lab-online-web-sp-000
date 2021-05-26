@@ -24,4 +24,15 @@ function reverseString(myString, myResult = []) {
   return myResult.join('');
 }
 
-// console.log(reverseString("chocolate"));
+function isPalindrome(myString, myResult = true) {
+  if(myString.length === 1) return myResult;
+  if(myString.length > 1 && myResult){
+    if(myString.charAt(0) === myString.charAt(myString.length - 1)){
+      mySubstring = myString.substring(1, myString.length - 1)
+      isPalindrome(mySubstring, myResult)
+    } else {
+      myResult = false;
+    }
+  }
+  return myResult;
+}

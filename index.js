@@ -44,3 +44,4 @@ function addUpTo(elements, index){
     return elements[index] + addUpTo(elements, index - 1);
   }
 }
+new
